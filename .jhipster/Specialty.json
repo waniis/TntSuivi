@@ -1,0 +1,32 @@
+{
+    "name": "Specialty",
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required",
+                "unique"
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "medecin",
+            "otherEntityRelationshipName": "specialty",
+            "relationshipName": "medecin"
+        }
+    ],
+    "changelogDate": "20200506210300",
+    "entityTableName": "specialty",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "embedded": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

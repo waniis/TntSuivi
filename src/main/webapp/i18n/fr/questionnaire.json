@@ -1,0 +1,27 @@
+{
+  "tnTsuiviApp": {
+    "questionnaire": {
+      "home": {
+        "title": "Questionnaires",
+        "createLabel": "Créer un nouveau Questionnaire",
+        "createOrEditLabel": "Créer ou éditer un Questionnaire",
+        "notFound": "Aucun Questionnaire trouvé"
+      },
+      "created": "Un nouveau Questionnaire a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Questionnaire avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Questionnaire avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Questionnaire {{ id }} ?"
+      },
+      "detail": {
+        "title": "Questionnaire"
+      },
+      "subject": "Subject",
+      "startDate": "Start Date",
+      "endDate": "End Date",
+      "patientQuestionnaire": "Patient Questionnaire",
+      "question": "Question",
+      "medecin": "Medecin"
+    }
+  }
+}

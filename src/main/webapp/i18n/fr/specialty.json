@@ -1,0 +1,23 @@
+{
+  "tnTsuiviApp": {
+    "specialty": {
+      "home": {
+        "title": "Specialties",
+        "createLabel": "Créer un nouveau Specialty",
+        "createOrEditLabel": "Créer ou éditer un Specialty",
+        "notFound": "Aucun Specialty trouvé"
+      },
+      "created": "Un nouveau Specialty a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Specialty avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Specialty avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Specialty {{ id }} ?"
+      },
+      "detail": {
+        "title": "Specialty"
+      },
+      "name": "Name",
+      "medecin": "Medecin"
+    }
+  }
+}

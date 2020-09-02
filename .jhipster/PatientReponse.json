@@ -1,0 +1,44 @@
+{
+    "name": "PatientReponse",
+    "fields": [
+        {
+            "fieldName": "content",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "patientQuestionnaire",
+            "otherEntityRelationshipName": "patientReponse",
+            "relationshipName": "patientQuestionnaire",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "question",
+            "otherEntityRelationshipName": "patientReponse",
+            "relationshipValidateRules": "required",
+            "relationshipName": "question",
+            "otherEntityField": "label"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "questionAnswer",
+            "otherEntityRelationshipName": "patientReponse",
+            "relationshipName": "questionAnswer",
+            "otherEntityField": "label"
+        }
+    ],
+    "changelogDate": "20200506211300",
+    "entityTableName": "patient_reponse",
+    "dto": "no",
+    "pagination": "no",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": true,
+    "fluentMethods": true,
+    "readOnly": false,
+    "embedded": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

@@ -1,0 +1,60 @@
+{
+    "name": "Question",
+    "fields": [
+        {
+            "fieldName": "label",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "typeQuestion",
+            "fieldType": "TypeQuestion",
+            "fieldValues": "Text,CheckBox,RadioBox,Select",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "questionAnswer",
+            "otherEntityRelationshipName": "question",
+            "relationshipName": "questionAnswer"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "patientReponse",
+            "otherEntityRelationshipName": "question",
+            "relationshipName": "patientReponse"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "medecin",
+            "otherEntityRelationshipName": "question",
+            "relationshipName": "medecin",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "many-to-many",
+            "otherEntityName": "questionnaire",
+            "otherEntityRelationshipName": "question",
+            "relationshipName": "questionnaire",
+            "otherEntityField": "id",
+            "ownerSide": false
+        }
+    ],
+    "changelogDate": "20200506211100",
+    "entityTableName": "question",
+    "dto": "no",
+    "pagination": "no",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": true,
+    "fluentMethods": true,
+    "readOnly": false,
+    "embedded": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

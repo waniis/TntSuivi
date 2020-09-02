@@ -1,0 +1,11 @@
+{
+  "tnTsuiviApp": {
+    "TypeQuestion": {
+      "null": "",
+      "Text": "Text",
+      "CheckBox": "CheckBox",
+      "RadioBox": "RadioBox",
+      "Select": "Select"
+    }
+  }
+}

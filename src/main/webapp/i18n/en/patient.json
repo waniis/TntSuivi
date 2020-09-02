@@ -1,0 +1,36 @@
+{
+  "tnTsuiviApp": {
+    "patient": {
+      "home": {
+        "title": "Patients",
+        "createLabel": "Create a new Patient",
+        "createOrEditLabel": "Create or edit a Patient",
+        "notFound": "No Patients found"
+      },
+      "created": "A new Patient is created with identifier {{ param }}",
+      "updated": "A Patient is updated with identifier {{ param }}",
+      "deleted": "A Patient is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Patient {{ id }}?"
+      },
+      "detail": {
+        "title": "Patient"
+      },
+      "fullName": "Full Name",
+      "phone": "Phone",
+      "adress": "Adress",
+      "sexe": "Sexe",
+      "alcool": "Alcool",
+      "startDateAlcool": "Start Date Alcool",
+      "endDateAlcool": "End Date Alcool",
+      "tobacoo": "Tobacoo",
+      "startDateTobacco": "Start Date Tobacco",
+      "endDateTobacco": "End Date Tobacco",
+      "user": "User",
+      "patientQuestionnaire": "Patient Questionnaire",
+      "medecin": "Medecin",
+      "centre": "Centre",
+      "groupeDePatient": "Groupe De Patient"
+    }
+  }
+}

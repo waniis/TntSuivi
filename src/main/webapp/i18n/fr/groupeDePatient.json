@@ -1,0 +1,24 @@
+{
+  "tnTsuiviApp": {
+    "groupeDePatient": {
+      "home": {
+        "title": "GroupeDePatients",
+        "createLabel": "Créer un nouveau Groupe De Patient",
+        "createOrEditLabel": "Créer ou éditer un Groupe De Patient",
+        "notFound": "Aucun Groupe De Patient trouvé"
+      },
+      "created": "Un nouveau Groupe De Patient a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Groupe De Patient avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Groupe De Patient avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Groupe De Patient {{ id }} ?"
+      },
+      "detail": {
+        "title": "Groupe De Patient"
+      },
+      "name": "Name",
+      "patient": "Patient",
+      "medecin": "Medecin"
+    }
+  }
+}

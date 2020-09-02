@@ -1,0 +1,25 @@
+{
+  "tnTsuiviApp": {
+    "patientReponse": {
+      "home": {
+        "title": "PatientReponses",
+        "createLabel": "Créer un nouveau Patient Reponse",
+        "createOrEditLabel": "Créer ou éditer un Patient Reponse",
+        "notFound": "Aucun Patient Reponse trouvé"
+      },
+      "created": "Un nouveau Patient Reponse a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Patient Reponse avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Patient Reponse avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Patient Reponse {{ id }} ?"
+      },
+      "detail": {
+        "title": "Patient Reponse"
+      },
+      "content": "Content",
+      "patientQuestionnaire": "Patient Questionnaire",
+      "question": "Question",
+      "questionAnswer": "Question Answer"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "tnTsuiviApp": {
+    "adminDeCentre": {
+      "home": {
+        "title": "Admin De Centres",
+        "createLabel": "Create a new Admin De Centre",
+        "createOrEditLabel": "Create or edit a Admin De Centre",
+        "notFound": "No Admin De Centres found"
+      },
+      "created": "A new Admin De Centre is created with identifier {{ param }}",
+      "updated": "A Admin De Centre is updated with identifier {{ param }}",
+      "deleted": "A Admin De Centre is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Admin De Centre {{ id }}?"
+      },
+      "detail": {
+        "title": "Admin De Centre"
+      },
+      "fullName": "Full Name",
+      "phone": "Phone",
+      "user": "User",
+      "centre": "Centre"
+    }
+  }
+}

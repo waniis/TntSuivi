@@ -1,0 +1,30 @@
+{
+  "tnTsuiviApp": {
+    "centre": {
+      "home": {
+        "title": "Centres",
+        "createLabel": "Create a new Centre",
+        "createOrEditLabel": "Create or edit a Centre",
+        "notFound": "No Centres found"
+      },
+      "created": "A new Centre is created with identifier {{ param }}",
+      "updated": "A Centre is updated with identifier {{ param }}",
+      "deleted": "A Centre is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Centre {{ id }}?"
+      },
+      "detail": {
+        "title": "Centre"
+      },
+      "name": "Name",
+      "address": "Address",
+      "phone": "Phone",
+      "fax": "Fax",
+      "emergency": "Emergency",
+      "adminDeCentre": "Admin De Centre",
+      "medecin": "Medecin",
+      "patient": "Patient",
+      "region": "Region"
+    }
+  }
+}

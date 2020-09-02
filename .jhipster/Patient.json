@@ -1,0 +1,113 @@
+{
+    "name": "Patient",
+    "fields": [
+        {
+            "fieldName": "fullName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "phone",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "adress",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "sexe",
+            "fieldType": "Sexe",
+            "fieldValues": "Feminin,Masculin",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "alcool",
+            "fieldType": "Alcool",
+            "fieldValues": "No,Yes",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "startDateAlcool",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "endDateAlcool",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "tobacoo",
+            "fieldType": "Tobacco",
+            "fieldValues": "No,Yes",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "startDateTobacco",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "endDateTobacco",
+            "fieldType": "LocalDate"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-one",
+            "otherEntityName": "user",
+            "otherEntityRelationshipName": "patient",
+            "relationshipName": "user",
+            "otherEntityField": "id",
+            "ownerSide": true
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "patientQuestionnaire",
+            "otherEntityRelationshipName": "patient",
+            "relationshipName": "patientQuestionnaire"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "medecin",
+            "otherEntityRelationshipName": "patient",
+            "relationshipName": "medecin",
+            "otherEntityField": "fullName"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "centre",
+            "otherEntityRelationshipName": "patient",
+            "relationshipValidateRules": "required",
+            "relationshipName": "centre",
+            "otherEntityField": "name"
+        },
+        {
+            "relationshipType": "many-to-many",
+            "otherEntityName": "groupeDePatient",
+            "otherEntityRelationshipName": "patient",
+            "relationshipName": "groupeDePatient",
+            "otherEntityField": "id",
+            "ownerSide": false
+        }
+    ],
+    "changelogDate": "20200506210700",
+    "entityTableName": "patient",
+    "dto": "no",
+    "pagination": "pagination",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": true,
+    "fluentMethods": true,
+    "readOnly": false,
+    "embedded": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

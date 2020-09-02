@@ -1,0 +1,46 @@
+{
+    "name": "PatientQuestionnaire",
+    "fields": [
+        {
+            "fieldName": "doneTimeDate",
+            "fieldType": "Instant"
+        },
+        {
+            "fieldName": "done",
+            "fieldType": "Boolean"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "patientReponse",
+            "otherEntityRelationshipName": "patientQuestionnaire",
+            "relationshipName": "patientReponse"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "patient",
+            "otherEntityRelationshipName": "patientQuestionnaire",
+            "relationshipName": "patient",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "questionnaire",
+            "otherEntityRelationshipName": "patientQuestionnaire",
+            "relationshipName": "questionnaire",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20200506211000",
+    "entityTableName": "patient_questionnaire",
+    "dto": "no",
+    "pagination": "no",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": true,
+    "fluentMethods": true,
+    "readOnly": false,
+    "embedded": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

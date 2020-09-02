@@ -1,0 +1,33 @@
+{
+  "tnTsuiviApp": {
+    "medecin": {
+      "home": {
+        "title": "Medecins",
+        "createLabel": "Create a new Medecin",
+        "createOrEditLabel": "Create or edit a Medecin",
+        "notFound": "No Medecins found"
+      },
+      "created": "A new Medecin is created with identifier {{ param }}",
+      "updated": "A Medecin is updated with identifier {{ param }}",
+      "deleted": "A Medecin is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Medecin {{ id }}?"
+      },
+      "detail": {
+        "title": "Medecin"
+      },
+      "fullName": "Full Name",
+      "phone": "Phone",
+      "phone2": "Phone 2",
+      "adress": "Adress",
+      "sexe": "Sexe",
+      "user": "User",
+      "question": "Question",
+      "patient": "Patient",
+      "questionnaire": "Questionnaire",
+      "groupeDePatient": "Groupe De Patient",
+      "centre": "Centre",
+      "specialty": "Specialty"
+    }
+  }
+}

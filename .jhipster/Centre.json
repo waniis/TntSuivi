@@ -1,0 +1,76 @@
+{
+    "name": "Centre",
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "address",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "phone",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "fax",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "emergency",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "adminDeCentre",
+            "otherEntityRelationshipName": "centre",
+            "relationshipName": "adminDeCentre"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "medecin",
+            "otherEntityRelationshipName": "centre",
+            "relationshipName": "medecin"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "patient",
+            "otherEntityRelationshipName": "centre",
+            "relationshipName": "patient"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "region",
+            "otherEntityRelationshipName": "centre",
+            "relationshipValidateRules": "required",
+            "relationshipName": "region",
+            "otherEntityField": "name"
+        }
+    ],
+    "changelogDate": "20200506210200",
+    "entityTableName": "centre",
+    "dto": "no",
+    "pagination": "pagination",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": true,
+    "fluentMethods": true,
+    "readOnly": false,
+    "embedded": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

@@ -1,0 +1,187 @@
+
+entity GroupeDePatient
+{name String,} 
+
+entity Region {
+ name String required unique
+}
+
+entity Centre {
+name String required,
+address String required,
+phone String required,
+fax String required,
+emergency  String 
+}
+entity Specialty {
+name String required unique 
+}
+enum Forme {
+    Orales, Injectables, Dermiques, Inhalees, Rectales 
+}
+
+entity Medicament {
+name String ,
+forme Forme  required ,
+descrpition String, 
+}
+entity AdminDeCentre  {
+fullName String  ,
+phone  String required,
+}
+
+
+
+relationship ManyToMany {
+  Questionnaire {question (label)} to Question{questionnaire}
+}
+ 
+relationship OneToMany {
+  Question{questionAnswer} to QuestionAnswer{question(label) }
+}
+
+relationship OneToMany {
+  Questionnaire {patientReponse} to PatientReponse {questionnaire(subject)}
+  Question{patientReponse} to PatientReponse{question (label) required}
+  QuestionAnswer{patientReponse} to PatientReponse{QuestionAnswer(label)}
+}
+
+relationship OneToOne{
+ PatientReponse{patient} to Patient {PatientReponse}
+}
+
+relationship OneToMany {
+  Region{centre} to Centre{region(name) required}
+}
+
+relationship OneToMany {
+  Medecin{question} to Question{medecin}
+}
+
+
+relationship OneToMany {
+  Medecin{patient} to Patient{medecin(fullName)}
+}
+
+
+relationship OneToMany {
+  Medecin{questionnaire} to Questionnaire{medecin}
+}
+
+relationship OneToMany {
+  Centre{AdminDeCentre} to AdminDeCentre{centre(name)}
+}
+
+
+relationship OneToMany {
+  Centre{medecin} to Medecin{centre(name) required}
+}
+
+relationship OneToMany {
+  Centre{patient} to Patient{centre(name) required}
+}
+
+
+entity Medecin {
+    fullName String ,
+	phone  String required,
+    phone2 String,
+    adress String required,
+    sexe Sexe required,
+}
+entity Patient {
+    fullName String ,
+	phone  String required,
+    adress String required,
+    sexe Sexe required,
+    alcool Alcool required,
+    startDateAlcool LocalDate,
+	endDateAlcool LocalDate,
+    tobacoo Tobacco required, 
+    startDateTobacco LocalDate,
+	endDateTobacco LocalDate,
+}
+
+entity Notification {
+description  String ,
+dateTime Instant,
+link String,
+seen Boolean
+}
+entity Questionnaire {
+subject String ,
+startDate Instant,
+endDate Instant 
+}
+entity PatientQuestionnaire{
+doneTimeDate Instant,	
+done Boolean
+}
+
+
+relationship OneToMany {
+  Patient{PatientQuestionnaire} to PatientQuestionnaire{patient}
+}
+
+relationship OneToMany {
+ Questionnaire{PatientQuestionnaire} to PatientQuestionnaire{Questionnaire}
+}
+
+
+
+entity Question {
+label String  required ,
+typeQuestion  TypeQuestion required ,
+}
+
+entity QuestionAnswer {
+label String,
+}
+entity PatientReponse{
+content String ,
+}
+enum TypeQuestion {
+    Text , CheckBox, RadioBox , Select
+}
+
+relationship ManyToOne {
+  Notification{user} to User
+}
+
+relationship OneToOne {
+	Medecin{user} to User
+}
+
+relationship OneToOne {
+	AdminDeCentre {user} to User
+}
+
+relationship OneToOne {
+	Patient{user} to User
+}
+
+
+
+relationship OneToMany{
+Medecin{groupeDePatient} to GroupeDePatient{medecin}}
+relationship ManyToMany {
+GroupeDePatient{patient(fullName)} to Patient{GroupeDePatient}}
+relationship OneToMany {
+  Specialty{medecin} to Medecin{specialty(name) required }
+}
+
+enum Sexe {
+    Feminin, Masculin
+}
+enum Alcool {
+    No, Yes
+}
+
+enum Tobacco {
+    No, Yes
+}
+
+
+filter Centre ,  Medicament, Medecin , Patient, Questionnaire , Question , Notification , PatientQuestionnaire , QuestionAnswer, PatientReponse 
+paginate Centre, Medecin , Patient  with pagination
+paginate Region with infinite-scroll

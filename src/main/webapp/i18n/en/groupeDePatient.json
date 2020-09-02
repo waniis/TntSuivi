@@ -1,0 +1,24 @@
+{
+  "tnTsuiviApp": {
+    "groupeDePatient": {
+      "home": {
+        "title": "Groupe De Patients",
+        "createLabel": "Create a new Groupe De Patient",
+        "createOrEditLabel": "Create or edit a Groupe De Patient",
+        "notFound": "No Groupe De Patients found"
+      },
+      "created": "A new Groupe De Patient is created with identifier {{ param }}",
+      "updated": "A Groupe De Patient is updated with identifier {{ param }}",
+      "deleted": "A Groupe De Patient is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Groupe De Patient {{ id }}?"
+      },
+      "detail": {
+        "title": "Groupe De Patient"
+      },
+      "name": "Name",
+      "patient": "Patient",
+      "medecin": "Medecin"
+    }
+  }
+}

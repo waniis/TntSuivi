@@ -1,0 +1,24 @@
+{
+  "tnTsuiviApp": {
+    "questionAnswer": {
+      "home": {
+        "title": "QuestionAnswers",
+        "createLabel": "Créer un nouveau Question Answer",
+        "createOrEditLabel": "Créer ou éditer un Question Answer",
+        "notFound": "Aucun Question Answer trouvé"
+      },
+      "created": "Un nouveau Question Answer a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Question Answer avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Question Answer avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Question Answer {{ id }} ?"
+      },
+      "detail": {
+        "title": "Question Answer"
+      },
+      "label": "Label",
+      "patientReponse": "Patient Reponse",
+      "question": "Question"
+    }
+  }
+}

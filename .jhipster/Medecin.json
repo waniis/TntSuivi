@@ -1,0 +1,96 @@
+{
+    "name": "Medecin",
+    "fields": [
+        {
+            "fieldName": "fullName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "phone",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "phone2",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "adress",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "sexe",
+            "fieldType": "Sexe",
+            "fieldValues": "Feminin,Masculin",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-one",
+            "otherEntityName": "user",
+            "otherEntityRelationshipName": "medecin",
+            "relationshipName": "user",
+            "otherEntityField": "id",
+            "ownerSide": true
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "question",
+            "otherEntityRelationshipName": "medecin",
+            "relationshipName": "question"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "patient",
+            "otherEntityRelationshipName": "medecin",
+            "relationshipName": "patient"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "questionnaire",
+            "otherEntityRelationshipName": "medecin",
+            "relationshipName": "questionnaire"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "groupeDePatient",
+            "otherEntityRelationshipName": "medecin",
+            "relationshipName": "groupeDePatient"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "centre",
+            "otherEntityRelationshipName": "medecin",
+            "relationshipValidateRules": "required",
+            "relationshipName": "centre",
+            "otherEntityField": "name"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "specialty",
+            "otherEntityRelationshipName": "medecin",
+            "relationshipValidateRules": "required",
+            "relationshipName": "specialty",
+            "otherEntityField": "name"
+        }
+    ],
+    "changelogDate": "20200506210600",
+    "entityTableName": "medecin",
+    "dto": "no",
+    "pagination": "pagination",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": true,
+    "fluentMethods": true,
+    "readOnly": false,
+    "embedded": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

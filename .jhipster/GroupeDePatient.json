@@ -1,0 +1,37 @@
+{
+    "name": "GroupeDePatient",
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-many",
+            "otherEntityName": "patient",
+            "otherEntityRelationshipName": "groupeDePatient",
+            "relationshipName": "patient",
+            "otherEntityField": "fullName",
+            "ownerSide": true
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "medecin",
+            "otherEntityRelationshipName": "groupeDePatient",
+            "relationshipName": "medecin",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20200506210000",
+    "entityTableName": "groupe_de_patient",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "embedded": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

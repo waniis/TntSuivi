@@ -1,0 +1,33 @@
+{
+  "tnTsuiviApp": {
+    "medecin": {
+      "home": {
+        "title": "Medecins",
+        "createLabel": "Créer un nouveau Medecin",
+        "createOrEditLabel": "Créer ou éditer un Medecin",
+        "notFound": "Aucun Medecin trouvé"
+      },
+      "created": "Un nouveau Medecin a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Medecin avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Medecin avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Medecin {{ id }} ?"
+      },
+      "detail": {
+        "title": "Medecin"
+      },
+      "fullName": "Full Name",
+      "phone": "Phone",
+      "phone2": "Phone 2",
+      "adress": "Adress",
+      "sexe": "Sexe",
+      "user": "User",
+      "question": "Question",
+      "patient": "Patient",
+      "questionnaire": "Questionnaire",
+      "groupeDePatient": "Groupe De Patient",
+      "centre": "Centre",
+      "specialty": "Specialty"
+    }
+  }
+}

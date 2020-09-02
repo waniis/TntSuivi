@@ -1,0 +1,26 @@
+{
+  "tnTsuiviApp": {
+    "patientQuestionnaire": {
+      "home": {
+        "title": "PatientQuestionnaires",
+        "createLabel": "Créer un nouveau Patient Questionnaire",
+        "createOrEditLabel": "Créer ou éditer un Patient Questionnaire",
+        "notFound": "Aucun Patient Questionnaire trouvé"
+      },
+      "created": "Un nouveau Patient Questionnaire a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Patient Questionnaire avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Patient Questionnaire avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Patient Questionnaire {{ id }} ?"
+      },
+      "detail": {
+        "title": "Patient Questionnaire"
+      },
+      "doneTimeDate": "Done Time Date",
+      "done": "Done",
+      "patientReponse": "Patient Reponse",
+      "patient": "Patient",
+      "questionnaire": "Questionnaire"
+    }
+  }
+}

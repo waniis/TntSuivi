@@ -1,0 +1,12 @@
+{
+  "tnTsuiviApp": {
+    "Forme": {
+      "null": "",
+      "Orales": "Orales",
+      "Injectables": "Injectables",
+      "Dermiques": "Dermiques",
+      "Inhalees": "Inhalees",
+      "Rectales": "Rectales"
+    }
+  }
+}

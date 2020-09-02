@@ -1,0 +1,25 @@
+{
+  "tnTsuiviApp": {
+    "adminDeCentre": {
+      "home": {
+        "title": "AdminDeCentres",
+        "createLabel": "Créer un nouveau Admin De Centre",
+        "createOrEditLabel": "Créer ou éditer un Admin De Centre",
+        "notFound": "Aucun Admin De Centre trouvé"
+      },
+      "created": "Un nouveau Admin De Centre a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Admin De Centre avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Admin De Centre avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Admin De Centre {{ id }} ?"
+      },
+      "detail": {
+        "title": "Admin De Centre"
+      },
+      "fullName": "Full Name",
+      "phone": "Phone",
+      "user": "User",
+      "centre": "Centre"
+    }
+  }
+}

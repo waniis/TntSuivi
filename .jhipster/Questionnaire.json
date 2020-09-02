@@ -1,0 +1,51 @@
+{
+    "name": "Questionnaire",
+    "fields": [
+        {
+            "fieldName": "subject",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "startDate",
+            "fieldType": "Instant"
+        },
+        {
+            "fieldName": "endDate",
+            "fieldType": "Instant"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "patientQuestionnaire",
+            "otherEntityRelationshipName": "questionnaire",
+            "relationshipName": "patientQuestionnaire"
+        },
+        {
+            "relationshipType": "many-to-many",
+            "otherEntityName": "question",
+            "otherEntityRelationshipName": "questionnaire",
+            "relationshipName": "question",
+            "otherEntityField": "label",
+            "ownerSide": true
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "medecin",
+            "otherEntityRelationshipName": "questionnaire",
+            "relationshipName": "medecin",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20200506210900",
+    "entityTableName": "questionnaire",
+    "dto": "no",
+    "pagination": "no",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": true,
+    "fluentMethods": true,
+    "readOnly": false,
+    "embedded": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

@@ -1,0 +1,35 @@
+{
+    "name": "QuestionAnswer",
+    "fields": [
+        {
+            "fieldName": "label",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "patientReponse",
+            "otherEntityRelationshipName": "questionAnswer",
+            "relationshipName": "patientReponse"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "question",
+            "otherEntityRelationshipName": "questionAnswer",
+            "relationshipName": "question",
+            "otherEntityField": "label"
+        }
+    ],
+    "changelogDate": "20200506211200",
+    "entityTableName": "question_answer",
+    "dto": "no",
+    "pagination": "no",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": true,
+    "fluentMethods": true,
+    "readOnly": false,
+    "embedded": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}
